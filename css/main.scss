@@ -310,7 +310,7 @@ input[type=submit] {
         grid-template-columns: 40% auto; // first column 40%, second fill up
     }
 
-    .left, .projects-left {
+    .left, .projects-left, .project-img {
         display: grid;
         place-content: center;
     } 

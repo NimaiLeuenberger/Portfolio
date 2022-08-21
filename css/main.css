@@ -307,7 +307,7 @@ input[type=submit] {
     display: grid;
     grid-template-columns: 40% auto;
   }
-  .left, .projects-left {
+  .left, .projects-left, .project-img {
     display: grid;
     place-content: center;
   }
