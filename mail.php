@@ -5,12 +5,13 @@ $mail = $_POST['mail'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
 
-$mailheader = "From:".$name."<".$mail.">\r\n";
+$to = "nimai.leuenberger@gmail.com";
+$body = "";
 
-$recepient = "nimai.leuenberger@gmail.com";
+$body .= "From: ".$name. "\r\n";
+$body .= "Email: ".$mail. "\r\n";
+$body .= "Message: ".$message. "\r\n";
 
-mail($recepient, $subject, $message, $mailheader) or die("Error!");
-
-echo"message sent";
+mail($to, $subject, $body);
 
 ?>
