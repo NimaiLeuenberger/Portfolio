@@ -24,7 +24,7 @@
         </header>
         <div class="social-header">
             <ul>
-                <li><a href="#"><img src="./images/linkedin_logo.png" alt="linkedin" target="_blank"></a></li> <!-- alt for people who don't see -->
+                <li><a href="https://www.linkedin.com/in/nimai-leuenberger-1325121a2?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B4WPdKloETkCCR8RcOU%2F%2Fww%3D%3D" target="_blank"><img src="./images/linkedin_logo.png" alt="linkedin" target="_blank"></a></li> <!-- alt for people who don't see -->
                 <li><a href="https://github.com/NimaiLeuenberger" alt="github" target="_blank"><img src="./images/github_logo.png" alt="github"></a></li>
             </ul>
         </div>
@@ -67,10 +67,15 @@
         <div class="left">
             <div class="inner transition2">
                 <p class="title">About me</p>
-                <p class="desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                <p class="desc">I was born in Richterswil on 11 June 2005 and I live in Obfelden. I am currently a student at the IMS in Hottingen and I am heading towards my final year, my internship year.
+                  I spend my free time doing sports, preferably breakdancing and snowboarding in the winter or downhill biking in the summer. However, I can also be found in the gym and lounging by the lake or in a dignified bar.
+                  Important to me are communicative and critically thinking people, a well-groomed appearance and a sense of humour.
+                </p>
             </div>
         </div>
-        <img class="right transition2" src="images/me.jpg" alt="picture of nimai">
+        <div class="right">
+          <img class="transition2" src="images/me.jpg" alt="picture of nimai">
+        </div>
     </section>
 
     <section class="projects">
@@ -106,7 +111,7 @@
               </div>
           </div>
           <div class="project-img">
-            <img src="images/pacman.png" alt="project picture">
+            <a href="https://pacman-a-real-men.netlify.app/"><img src="images/pacman.png" alt="project picture"></a>
           </div>
       </div>
 
@@ -114,37 +119,37 @@
           <div class="projects-left">
               <div class="inner">
                   <p class="undertitle">Lawfirm</p>
-                  <p class="desc">This is a project from school where I made a Website with Java Restful Webservices.
-                    The whole website has a system with cookies and different logins. It displays 3 lists: lawyers, clients and legal cases. Login with different users which can have the role "guest": do nothing, the role "user": look at the 3 different lists and spesific details and the role "admin": same as the role "user" and edit, create or delete lawyers, clients or legal cases.
+                  <p class="desc">This is a project from school where I made a Website with Java Restful Webservices which I extended on my own.
+                    The whole website has a system with cookies and different logins. It displays 3 lists: lawyers, clients and legal cases. Login with different users which can have the role "guest": do nothing, the role "user": look at the 3 different lists and spesific details and the role "admin": same as the role "user" and edit, create or delete lawyers, clients or legal cases. And all the changes are saved in a local JSON file.
                   </p>
               </div>
           </div>
           <div class="project-img">
-            <img src="images/bild.jpg" alt="project picture">
+            <img src="images/lawfirm.png" alt="project picture">
           </div>
       </div>
 
       <div class="projects-container transition3">
-          <div class="projects-left">
+          <div href="https://ecommercevsstationaer.000webhostapp.com/" class="projects-left">
               <div class="inner">
-                  <p class="undertitle">Online or Store</p>
+                  <a class="undertitle">Online or Store</a>
                   <p class="desc">This is a school project in the subject economy. Two classmates and I programmed this website about: online shopping vs shopping in local stores.</p>
               </div>
           </div>
           <div class="project-img">
-            <img src="images/bild.jpg" alt="project picture">
+            <a href="https://ecommercevsstationaer.000webhostapp.com/"><img src="images/onlineorstore.jpeg" alt="project picture"></a>
           </div>
       </div>
 
       <div class="projects-container transition3">
         <div class="projects-left">
             <div class="inner">
-                <p class="undertitle">Portfolio</p>
+                <a href="index.html" class="undertitle">Portfolio</a>
                 <p class="desc">In the beginning I designed the website with Adobe XD and took the SVG code of several elements from XD to place them in my HTML code. With this project I've learned to do animations with gsap and I've recaped the process of HTML coding, CSS styling and making a contact formula.</p>
             </div>
         </div>
         <div class="project-img">
-          <img src="images/portfolio.png" alt="project picture">
+          <a href="index.html"><img src="images/portfolio.png" alt="project picture"></a>
         </div>
     </div>
     </section>
@@ -191,7 +196,7 @@
             <li><a href="#about">About me</a></li>
             <li><a href="#projects">My projects</a></li>
             <li><a href="#contact">Contact me</a></li>
-            <li><a href="#"><img src="./images/linkedin_logo.png" alt="linkedin" target="_blank"></a></li>
+            <li><a href="https://www.linkedin.com/in/nimai-leuenberger-1325121a2?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B4WPdKloETkCCR8RcOU%2F%2Fww%3D%3D" target="_blank"><img src="./images/linkedin_logo.png" alt="linkedin" target="_blank"></a></li>
             <li><a href="https://github.com/NimaiLeuenberger" alt="github" target="_blank"><img src="./images/github_logo.png" alt="github"></a></li>
           </ul>
         </nav>
@@ -267,7 +272,7 @@
       },
       y: 50,
       opacity: 0,
-      duration: 1.2,
+      duration: 1,
       stagger: .6
     })
 
@@ -275,6 +280,7 @@
     $(document).ready(function(){
       $('.contact-animation').click(function(){
         $('.box').toggleClass('animated');
+        $('.contact').toggleClass('animated'); 
         return false;
       });
     });
