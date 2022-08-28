@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 <body>
 
@@ -285,5 +286,25 @@
       });
     });
   </script>
+
+  <?php
+
+    $name = $_POST['name'];
+    $mail = $_POST['mail'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
+
+    $to = "nimai.leuenberger@gmail.com";
+    $body = "";
+
+    $body .= "From: ".$name. "\r\n";
+    $body .= "Email: ".$mail. "\r\n";
+    $body .= "Message: ".$message. "\r\n";
+
+    mail($to, $subject, $body);
+
+    echo $_SERVER['PHP_SELF'];
+
+  ?>
 </body>
 </html>
