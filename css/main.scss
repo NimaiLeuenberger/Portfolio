@@ -5,17 +5,14 @@ body {
     margin: 0;
     font-family: 'Poppins', arial;
 }
-
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-
 a {
     text-decoration: none;
 }
-
 img {
     width: 100%;
 }
@@ -91,6 +88,13 @@ section {
     background: #ececec;
     z-index: -1;
 }
+
+.right {
+    img {
+        width: 50%;
+    }
+}
+
 .about::before {
     content: "";
     position: absolute;
@@ -138,17 +142,11 @@ section {
     left: 0;
     z-index: -1;
 }
-
 .undertitle {
     font-weight: bold;
     font-size: 1.1em;
     color: #131313;
 }
-
-.projects-container a img {
-    border-radius: 1em;
-}
-
 .projects-container {
     margin-bottom: 2em;
 }
@@ -165,9 +163,7 @@ section {
     width: 600px;
     position: relative;
     perspective: 800px;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    margin-top: 3em;
 }
 .wrapper .box {
     position: absolute;
@@ -188,10 +184,13 @@ section {
 .wrapper .box .front {
     box-shadow: 0 2px 15px -2px rgba(0, 0, 0, 0.6);
     height: 100%;
+    /* top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
 }
 .front h2 {
     text-align: center;
-    margin-top: 3em;
+    margin-top: 2em;
     margin-bottom: 1.5em;
 }
 .wrapper .box .back {
@@ -202,6 +201,9 @@ section {
 }
 .wrapper .box.animated {
     transform: rotateY(-180deg);
+}
+.contact.animated {
+    height: 40em;
 }
 .wrapper .close {
     display: block;
@@ -268,7 +270,6 @@ input[type=submit] {
         color: white;
     }
 }
-
 .bottom {
     display: flex;
     justify-content: space-between;
@@ -294,7 +295,6 @@ input[type=submit] {
         width: 20px;
     }
 }
-
 .bottom-deko {
     display: none;
 }
@@ -318,6 +318,10 @@ input[type=submit] {
     .right {
         margin-left: 2em;
         margin-top: 1em;
+    }
+
+    body {
+        font-size: larger;
     }
 }
 
@@ -417,9 +421,13 @@ input[type=submit] {
     .hero .content {
         padding: 6em 10em 6em 10em;
     }
+    
+    .projects, .about {
+        font-size: 1.1em;
+    }
 }
 
-@media only screen and (min-width: 1550px) {
+@media only screen and (min-width: 1950px) {
     header {
        padding: 2em 2em 2em 20em; 
     }
@@ -431,6 +439,11 @@ input[type=submit] {
     }
     .hero .content {
         padding: 9em 20em 6em 20em;
+    }
+
+    
+    .projects, .about {
+        font-size: 1.3em;
     }
 }
 

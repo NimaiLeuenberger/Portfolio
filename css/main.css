@@ -85,6 +85,10 @@ section {
   z-index: -1;
 }
 
+.right img {
+  width: 50%;
+}
+
 .about::before {
   content: "";
   position: absolute;
@@ -138,10 +142,6 @@ section {
   color: #131313;
 }
 
-.projects-container a img {
-  border-radius: 1em;
-}
-
 .projects-container {
   margin-bottom: 2em;
 }
@@ -159,8 +159,7 @@ section {
   width: 600px;
   position: relative;
   perspective: 800px;
-  top: 50%;
-  transform: translateY(-50%);
+  margin-top: 3em;
 }
 
 .wrapper .box {
@@ -185,11 +184,14 @@ section {
 .wrapper .box .front {
   box-shadow: 0 2px 15px -2px rgba(0, 0, 0, 0.6);
   height: 100%;
+  /* top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); */
 }
 
 .front h2 {
   text-align: center;
-  margin-top: 3em;
+  margin-top: 2em;
   margin-bottom: 1.5em;
 }
 
@@ -203,6 +205,10 @@ section {
 
 .wrapper .box.animated {
   transform: rotateY(-180deg);
+}
+
+.contact.animated {
+  height: 40em;
 }
 
 .wrapper .close {
@@ -315,6 +321,9 @@ input[type=submit] {
     margin-left: 2em;
     margin-top: 1em;
   }
+  body {
+    font-size: larger;
+  }
 }
 @media only screen and (min-width: 1050px) {
   .hero {
@@ -400,8 +409,11 @@ input[type=submit] {
   .hero .content {
     padding: 6em 10em 6em 10em;
   }
+  .projects, .about {
+    font-size: 1.1em;
+  }
 }
-@media only screen and (min-width: 1550px) {
+@media only screen and (min-width: 1950px) {
   header {
     padding: 2em 2em 2em 20em;
   }
@@ -413,6 +425,9 @@ input[type=submit] {
   }
   .hero .content {
     padding: 9em 20em 6em 20em;
+  }
+  .projects, .about {
+    font-size: 1.3em;
   }
 }
 .circle {
