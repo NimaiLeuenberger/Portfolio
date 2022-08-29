@@ -287,7 +287,7 @@
     });
   </script>
 
-  <?php
+  <!-- <?php
 
     $name = $_POST['name'];
     $mail = $_POST['mail'];
@@ -305,6 +305,6 @@
 
     echo $_SERVER['PHP_SELF'];
 
-  ?>
+  ?> -->
 </body>
 </html>
